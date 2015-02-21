@@ -1,0 +1,30 @@
+{
+  "name": "rs-reporter",
+  "version": "0.1.0",
+  "description": "A Reporting Server for Require Safe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottONeal/rs-reporter.git"
+  },
+  "keywords": [
+    "requiresafe",
+    "security"
+  ],
+  "author": "Scott O'Neal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScottONeal/rs-reporter/issues"
+  },
+  "homepage": "https://github.com/ScottONeal/rs-reporter",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "commander": "^2.6.0",
+    "express": "^4.11.2",
+    "rc": "^0.6.0",
+    "requiresafe-sdk": "^1.2.0"
+  }
+}
