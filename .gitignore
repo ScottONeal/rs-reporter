@@ -30,3 +30,5 @@ node_modules
 # Vim swap files
 *.swp
 *.swo
+
+*.DS_Store
