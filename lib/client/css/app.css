@@ -30,16 +30,30 @@ span.brak {
   color: #FF5B57 !important;
 }
 
-.rsr-encapsulate {
+.brak-encapsulate {
   color: #555 !important;
 }
 
-.rsr-encapsulate::before {
+.brak-encapsulate::before {
   color: #FF5B57;
   content: "[";
 }
 
-.rsr-encapsulate::after {
+.brak-encapsulate::after {
   color: #FF5B57;
   content: "]";
+}
+
+span.colon {
+  color: #347CB2 !important;
+}
+
+.col-encapsulate::before {
+  color: #347CB2;
+  content: ":";
+}
+
+.col-encapsulate::after {
+  color: #347CB2;
+  content: ":";
 }

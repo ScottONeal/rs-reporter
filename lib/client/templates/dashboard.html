@@ -1,0 +1,13 @@
+<h2>Dashboard</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"><span class="h4"><span class="colon">_</span>Project</span></div>
+    <div class="col-sm-2"><span class="h4"><span class="colon">_</span>Status</span></div>
+    <div class="col-sm-8"><span class="h4"><span class="colon">_</span>Description</span></div>
+  </div>
+  <div class="row" ng-repeat="project in projects">
+    <div class="col-sm-2"><a class="brak-encapsulate" ng-href="/projects/{{project.path}}">{{ project.name }}</a></div>
+    <div class="col-sm-2">{{ project.status }}</div>
+    <div class="col-sm-8">{{ project.description }}</div>
+  </div>
+</div>
