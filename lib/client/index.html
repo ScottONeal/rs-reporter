@@ -1,0 +1,51 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>RS-Reporter</title>
+    <meta name="viewport" content="width=device-width"> 
+
+    <!-- CDN :: Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/css/app.css">
+  </head>
+  <body ng-app="rsReporter">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://github.com/ScottONeal/rs-reporter" target="_blank"><span class="brak">[</span>RS-Reporter<span class="brak">]</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#about">Config</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" ng-controller="projectsCtrl">
+      <div class="row" ng-repeat="project in projects">
+        <div class="col-sm-4"><a class="rsr-encapsulate" ng-href="/projects/{{project.path}}">{{ project.name }}</a></div>
+        <div class="col-sm-4">{{ project.status }}</div>
+        <div class="col-sm-4">{{ project.description }}</div>
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>

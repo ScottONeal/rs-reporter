@@ -1,0 +1,45 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body {
+  font-family: monospace !important;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+a.navbar-brand {
+  color: #555 !important;
+  font-weight: bold;
+}
+
+span.brak {
+  color: #FF5B57 !important;
+}
+
+.rsr-encapsulate {
+  color: #555 !important;
+}
+
+.rsr-encapsulate::before {
+  color: #FF5B57;
+  content: "[";
+}
+
+.rsr-encapsulate::after {
+  color: #FF5B57;
+  content: "]";
+}
