@@ -4,7 +4,7 @@
   "description": "A Reporting Server for Require Safe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "morgan": "^1.5.1",
     "rc": "^0.6.0",
     "requiresafe-sdk": "^1.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
   }
 }
