@@ -6,6 +6,10 @@
   "scripts": {
     "test": "node_modules/mocha/bin/mocha"
   },
+  "bin": {
+    "rs-reporter": "bin/rs-reporter"
+  },
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/ScottONeal/rs-reporter.git"
