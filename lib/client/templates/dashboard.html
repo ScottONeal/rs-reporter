@@ -6,7 +6,7 @@
     <div class="col-sm-8"><span class="h4"><span class="colon">_</span>Description</span></div>
   </div>
   <div class="row" ng-repeat="project in projects">
-    <div class="col-sm-2"><a class="brak-encapsulate" ng-href="/projects/{{project.path}}">{{ project.name }}</a></div>
+    <div class="col-sm-2"><a class="brak-encapsulate" ng-href="/projects/{{project.name | encode}}">{{ project.name }}</a></div>
     <div class="col-sm-2" ng-class="{'text-success': project.passed, 'text-danger': !project.passed}"><strong>{{ project.passed ? 'Passing' : 'Failing' }}</strong></div>
     <div class="col-sm-8">{{ project.description }}</div>
   </div>

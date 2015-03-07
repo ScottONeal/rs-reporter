@@ -3,6 +3,7 @@
 /* Not required for template or sticky footer method. */
 body {
   font-family: monospace !important;
+  font-size: 12px;
 }
 
 body > .container {
