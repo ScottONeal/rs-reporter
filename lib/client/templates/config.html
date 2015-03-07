@@ -1,5 +1,25 @@
 <h2>Config</h2>
-<div class="row" ng-repeat="(prop, val) in config">
-  <div class="col-sm-2 brak-encapsulate">{{ prop }}</div>
-  <div class="col-sm-2">{{ val }}</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Name</div>
+  <div class="col-sm-6">{{ config.name }}</div>
+</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Total Projects</div>
+  <div class="col-sm-6">{{ config.projects.length }}</div>
+</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Check Interval</div>
+  <div class="col-sm-6">{{ config.checkInterval }}</div>
+</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Pop Logs</div>
+  <div class="col-sm-6">{{ config.popLogs }}</div>
+</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Report File</div>
+  <div class="col-sm-6">{{ config.reportFile }}</div>
+</div>
+<div class="row">
+  <div class="col-sm-2 brak-encapsulate">Project Path</div>
+  <div class="col-sm-6">{{ config.workingPath }}</div>
 </div>
